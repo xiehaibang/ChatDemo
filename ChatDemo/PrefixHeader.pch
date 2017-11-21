@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  ChatDemo
+//
+//  Created by 云趣科技 on 2017/11/17.
+//  Copyright © 2017年 谢海邦. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+
+#import <XMPPFramework/XMPPFramework.h>
+
+#endif
+
+#define kLOGIN_SUCCESE      @"kLOGIN_SUCCESE"
+#define kREGISTER_RESULT    @"kREGISTER_RESULT"
+#define kDOMAIN             @"suntekrddeMacBook-Pro.local"
+#define kRESOURCE           @"iOS"
+
+#endif /* PrefixHeader_pch */
