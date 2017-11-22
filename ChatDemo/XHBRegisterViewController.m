@@ -9,7 +9,8 @@
 #import "XHBRegisterViewController.h"
 #import "XHBXMPPTool.h"
 
-@interface XHBRegisterViewController ()
+@interface XHBRegisterViewController () <UITextFieldDelegate>
+
 @property (weak, nonatomic) IBOutlet UITextField * accountTextField;
 @property (weak, nonatomic) IBOutlet UITextField * passwordTextField;
 @property (weak, nonatomic) IBOutlet UITextField * confirmTextField;
@@ -28,6 +29,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.accountTextField.delegate = self;
+    self.passwordTextField.delegate = self;
+    self.confirmTextField.delegate = self;
     
     //设置密码输入框
     [self.passwordTextField setSecureTextEntry:YES];
@@ -65,12 +70,22 @@
     
     if (result) {
         
-        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:nil
-                                                         message:@"注册成功"
-                                                        delegate:nil
-                                               cancelButtonTitle:@"我知道了"
-                                               otherButtonTitles:nil];
-        [alert show];
+        UIAlertController * alertVC = [UIAlertController alertControllerWithTitle:nil
+                                                                          message:@"注册成功"
+                                                                   preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction * alertAction = [UIAlertAction actionWithTitle:@"我知道了"
+                                                               style:UIAlertActionStyleCancel
+                                                             handler:^(UIAlertAction * _Nonnull action) {
+                                                                 
+                                                                 [self.navigationController popViewControllerAnimated:YES];
+                                                                 
+                                                             }];
+        
+        [alertVC addAction:alertAction];
+        
+        [self presentViewController:alertVC animated:YES completion:nil];
+        
     }
     else {
         
@@ -131,7 +146,7 @@
         
         [alert show];
     }
-    else if ([password isEqualToString:confirmPassword]) {
+    else if (![password isEqualToString:confirmPassword]) {
         
         UIAlertView * alert = [[UIAlertView alloc] initWithTitle:nil
                                                         message:@"两次输入的密码不一致"
@@ -147,6 +162,27 @@
                                           andPassword:password];
     }
 }
+
+
+#pragma mark - UITextFieldDelegate
+//是否允许输入
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    
+    //判断是否是空格
+    if (![kAllowInputChar containsString:string]) {
+        
+        //如果输入的是删除键，允许输入
+        if ([string isEqualToString:@""]) {
+            
+            return YES;
+        }
+        
+        return NO;
+    }
+    
+    return YES;
+}
+
 
 - (void)dealloc {
     

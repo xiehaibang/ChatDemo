@@ -10,11 +10,14 @@
 #define PrefixHeader_pch
 
 #ifdef __OBJC__
-#import <UIKit/UIKit.h>
 
-#import <XMPPFramework/XMPPFramework.h>
+    #import <UIKit/UIKit.h>
+
+    #import "XMPPFramework.h"
 
 #endif
+
+#define kAllowInputChar     @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
 
 #define kLOGIN_SUCCESE      @"kLOGIN_SUCCESE"
 #define kREGISTER_RESULT    @"kREGISTER_RESULT"

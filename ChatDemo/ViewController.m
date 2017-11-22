@@ -7,11 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "XHBLoginViewController.h"
+#import "XHBBaseTabBarController.h"
 #import "XHBRegisterViewController.h"
 #import "XHBXMPPTool.h"
 
-@interface ViewController ()
+
+@interface ViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton * loginButton;
 
@@ -28,7 +29,15 @@ IB_DESIGNABLE
     
     [super viewWillAppear:animated];
     
+    self.accountTextField.delegate = self;
+    self.passwordTextField.delegate = self;
+    
+    [self.passwordTextField setSecureTextEntry:YES];
+    
     self.navigationController.navigationBar.hidden = YES;
+    
+    self.accountTextField.text = @"xiehaibang";
+    self.passwordTextField.text = @"123456";
 }
 
 - (void)viewDidLoad {
@@ -51,9 +60,9 @@ IB_DESIGNABLE
 //登录成功
 - (void)loginSuccese {
     
-    XHBLoginViewController * loginVC = [[XHBLoginViewController alloc] init];
+    XHBBaseTabBarController * tabBarVC = [[XHBBaseTabBarController alloc] init];
     
-    [self.navigationController pushViewController:loginVC animated:YES];
+    [self.navigationController pushViewController:tabBarVC animated:YES];
     
 }
 
@@ -101,6 +110,27 @@ IB_DESIGNABLE
 - (IBAction)forgetPasswordClick:(id)sender {
     
 }
+
+
+#pragma mark - UITextFieldDelegate
+//是否允许输入
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    
+    //禁止输入空格
+    if (![kAllowInputChar containsString:string]) {
+        
+        //如果是删除键，也允许输入
+        if ([string isEqualToString:@""]) {
+            return YES;
+        }
+        
+        return NO;
+    }
+    
+    
+    return YES;
+}
+
 
 #pragma mark - setter
 - (void)setCornerRadius:(CGFloat)cornerRadius {
