@@ -17,11 +17,32 @@
 
 #endif
 
-#define kAllowInputChar     @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+#import "Masonry.h"
+#import "UIView+Frame.h"
 
-#define kLOGIN_SUCCESE      @"kLOGIN_SUCCESE"
-#define kREGISTER_RESULT    @"kREGISTER_RESULT"
+#define WeakSelf(weakSelf) __weak typeof(self) weakSelf = self
+
+#define kAllowInputChar      @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+
+#define kLOGIN_SUCCESE       @"kLOGIN_SUCCESE"
+#define kREGISTER_RESULT     @"kREGISTER_RESULT"
+#define kXMPP_ROSTER_CHANGE  @"kXMPP_ROSTER_CHANGE"
+#define kXMPP_FRIEND_REQUEST @"kXMPP_FRIEND_REQUEST"
+
 #define kDOMAIN             @"suntekrddeMacBook-Pro.local"
 #define kRESOURCE           @"iOS"
+
+//方法名字以及所在文件行数的NSLog
+#define NSLog(format, ...) do {                                                                 \
+                                fprintf(stderr, "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n");     \
+                                                                                                \
+                                fprintf(stderr, "<%s : %d> %s\n",                               \
+                                [[[NSString stringWithUTF8String:__FILE__] lastPathComponent]   \
+                                UTF8String], __LINE__, __func__);                               \
+                                                                                                \
+                                (NSLog)((format), ##__VA_ARGS__);                               \
+                                                                                                \
+                                fprintf(stderr, "\n");} while (0)
+
 
 #endif /* PrefixHeader_pch */

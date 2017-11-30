@@ -16,9 +16,14 @@
 		B21396881FBD982400B7261A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21396861FBD982400B7261A /* LaunchScreen.storyboard */; };
 		B21396931FBD982400B7261A /* ChatDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B21396921FBD982400B7261A /* ChatDemoTests.m */; };
 		B213969E1FBD982500B7261A /* ChatDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B213969D1FBD982400B7261A /* ChatDemoUITests.m */; };
+		B213F24D1FC661C90003BCCB /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = B213F24C1FC661C90003BCCB /* UIView+Frame.m */; };
+		B213F2591FC66FD20003BCCB /* XHBUserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B213F2571FC66FD20003BCCB /* XHBUserTableViewCell.m */; };
+		B213F25A1FC66FD20003BCCB /* XHBUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B213F2581FC66FD20003BCCB /* XHBUserTableViewCell.xib */; };
 		B2397FAC1FC2AD4800546C50 /* XHBXMPPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B2397FAB1FC2AD4800546C50 /* XHBXMPPTool.m */; };
 		B2397FB01FC2CE5200546C50 /* XHBRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2397FAE1FC2CE5200546C50 /* XHBRegisterViewController.m */; };
 		B2397FB11FC2CE5200546C50 /* XHBRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2397FAF1FC2CE5200546C50 /* XHBRegisterViewController.xib */; };
+		B2EBC00A1FD00338003BDE55 /* XHBAddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EBC0081FD00338003BDE55 /* XHBAddFriendViewController.m */; };
+		B2EBC00B1FD00338003BDE55 /* XHBAddFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EBC0091FD00338003BDE55 /* XHBAddFriendViewController.xib */; };
 		B2FEC12A1FC54ECA0046D217 /* XMPPAnonymousAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FEBFBD1FC54EC90046D217 /* XMPPAnonymousAuthentication.m */; };
 		B2FEC12B1FC54ECA0046D217 /* XMPPDeprecatedDigestAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FEBFC01FC54EC90046D217 /* XMPPDeprecatedDigestAuthentication.m */; };
 		B2FEC12C1FC54ECA0046D217 /* XMPPDeprecatedPlainAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FEBFC31FC54EC90046D217 /* XMPPDeprecatedPlainAuthentication.m */; };
@@ -233,11 +238,19 @@
 		B21396991FBD982400B7261A /* ChatDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B213969D1FBD982400B7261A /* ChatDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatDemoUITests.m; sourceTree = "<group>"; };
 		B213969F1FBD982500B7261A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B213F24B1FC661C90003BCCB /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		B213F24C1FC661C90003BCCB /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		B213F2561FC66FD20003BCCB /* XHBUserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHBUserTableViewCell.h; sourceTree = "<group>"; };
+		B213F2571FC66FD20003BCCB /* XHBUserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHBUserTableViewCell.m; sourceTree = "<group>"; };
+		B213F2581FC66FD20003BCCB /* XHBUserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHBUserTableViewCell.xib; sourceTree = "<group>"; };
 		B2397FAA1FC2AD4800546C50 /* XHBXMPPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHBXMPPTool.h; sourceTree = "<group>"; };
 		B2397FAB1FC2AD4800546C50 /* XHBXMPPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHBXMPPTool.m; sourceTree = "<group>"; };
 		B2397FAD1FC2CE5200546C50 /* XHBRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHBRegisterViewController.h; sourceTree = "<group>"; };
 		B2397FAE1FC2CE5200546C50 /* XHBRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHBRegisterViewController.m; sourceTree = "<group>"; };
 		B2397FAF1FC2CE5200546C50 /* XHBRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHBRegisterViewController.xib; sourceTree = "<group>"; };
+		B2EBC0071FD00338003BDE55 /* XHBAddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHBAddFriendViewController.h; sourceTree = "<group>"; };
+		B2EBC0081FD00338003BDE55 /* XHBAddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHBAddFriendViewController.m; sourceTree = "<group>"; };
+		B2EBC0091FD00338003BDE55 /* XHBAddFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHBAddFriendViewController.xib; sourceTree = "<group>"; };
 		B2F2EBF01FBEE2AD0036FEA2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B2FEBFBC1FC54EC90046D217 /* XMPPAnonymousAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPAnonymousAuthentication.h; sourceTree = "<group>"; };
 		B2FEBFBD1FC54EC90046D217 /* XMPPAnonymousAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPAnonymousAuthentication.m; sourceTree = "<group>"; };
@@ -646,7 +659,10 @@
 		B21396771FBD982400B7261A /* ChatDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B2FEC20D1FC56EA10046D217 /* Base */,
+				B213F2521FC66D930003BCCB /* 群组 */,
+				B213F24E1FC66D120003BCCB /* 通讯录 */,
+				B213F24A1FC6614A0003BCCB /* Categorys */,
+				B2FEC20D1FC56EA10046D217 /* BaseController */,
 				B2FEC1BB1FC55F0A0046D217 /* Tool */,
 				B2FEBFB91FC54EC90046D217 /* XMPP */,
 				B213967B1FBD982400B7261A /* AppDelegate.h */,
@@ -657,10 +673,6 @@
 				B2397FAE1FC2CE5200546C50 /* XHBRegisterViewController.m */,
 				B2397FAF1FC2CE5200546C50 /* XHBRegisterViewController.xib */,
 				B21396811FBD982400B7261A /* Main.storyboard */,
-				B2FEC2041FC56E380046D217 /* XHBContactsViewController.h */,
-				B2FEC2051FC56E380046D217 /* XHBContactsViewController.m */,
-				B2FEC2071FC56E660046D217 /* XHBGroupViewController.h */,
-				B2FEC2081FC56E660046D217 /* XHBGroupViewController.m */,
 				B2FEC20A1FC56E8B0046D217 /* XHBSettingViewController.h */,
 				B2FEC20B1FC56E8B0046D217 /* XHBSettingViewController.m */,
 				B21396781FBD982400B7261A /* Supporting Files */,
@@ -697,6 +709,87 @@
 				B213969F1FBD982500B7261A /* Info.plist */,
 			);
 			path = ChatDemoUITests;
+			sourceTree = "<group>";
+		};
+		B213F24A1FC6614A0003BCCB /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				B213F24B1FC661C90003BCCB /* UIView+Frame.h */,
+				B213F24C1FC661C90003BCCB /* UIView+Frame.m */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		B213F24E1FC66D120003BCCB /* 通讯录 */ = {
+			isa = PBXGroup;
+			children = (
+				B213F24F1FC66D480003BCCB /* Controller */,
+				B213F2501FC66D5D0003BCCB /* View */,
+				B213F2511FC66D640003BCCB /* Model */,
+			);
+			path = "通讯录";
+			sourceTree = "<group>";
+		};
+		B213F24F1FC66D480003BCCB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2FEC2041FC56E380046D217 /* XHBContactsViewController.h */,
+				B2FEC2051FC56E380046D217 /* XHBContactsViewController.m */,
+				B2EBC0071FD00338003BDE55 /* XHBAddFriendViewController.h */,
+				B2EBC0081FD00338003BDE55 /* XHBAddFriendViewController.m */,
+				B2EBC0091FD00338003BDE55 /* XHBAddFriendViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B213F2501FC66D5D0003BCCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B213F2561FC66FD20003BCCB /* XHBUserTableViewCell.h */,
+				B213F2571FC66FD20003BCCB /* XHBUserTableViewCell.m */,
+				B213F2581FC66FD20003BCCB /* XHBUserTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B213F2511FC66D640003BCCB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B213F2521FC66D930003BCCB /* 群组 */ = {
+			isa = PBXGroup;
+			children = (
+				B213F2551FC66DAC0003BCCB /* Controller */,
+				B213F2541FC66DA50003BCCB /* View */,
+				B213F2531FC66D9A0003BCCB /* Model */,
+			);
+			path = "群组";
+			sourceTree = "<group>";
+		};
+		B213F2531FC66D9A0003BCCB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B213F2541FC66DA50003BCCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B213F2551FC66DAC0003BCCB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2FEC2071FC56E660046D217 /* XHBGroupViewController.h */,
+				B2FEC2081FC56E660046D217 /* XHBGroupViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		B2FEBFB91FC54EC90046D217 /* XMPP */ = {
@@ -1634,7 +1727,7 @@
 			path = screenShot;
 			sourceTree = "<group>";
 		};
-		B2FEC20D1FC56EA10046D217 /* Base */ = {
+		B2FEC20D1FC56EA10046D217 /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
 				B2FEC1FE1FC56C9C0046D217 /* XHBBaseTabBarController.h */,
@@ -1642,7 +1735,7 @@
 				B2FEC2011FC56CCD0046D217 /* XHBBaseNavigationController.h */,
 				B2FEC2021FC56CCD0046D217 /* XHBBaseNavigationController.m */,
 			);
-			name = Base;
+			path = BaseController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1777,6 +1870,7 @@
 				B2FEC1F61FC56C1E0046D217 /* Shot4.png in Resources */,
 				B2FEC1EC1FC56C1E0046D217 /* SenderTextNodeBkgHL@2x.png in Resources */,
 				B2FEC1E91FC56C1E0046D217 /* ReceiverTextNodeBkgHL@3x.png in Resources */,
+				B2EBC00B1FD00338003BDE55 /* XHBAddFriendViewController.xib in Resources */,
 				B2FEC1F11FC56C1E0046D217 /* LoginBackground@2x.png in Resources */,
 				B2FEC1F91FC56C1E0046D217 /* tabbar_mates@2x.png in Resources */,
 				B2FEC1E71FC56C1E0046D217 /* ReceiverTextNodeBkg@3x.png in Resources */,
@@ -1789,6 +1883,7 @@
 				B2FEC1FD1FC56C1E0046D217 /* wechat.png in Resources */,
 				B2FEC1EE1FC56C1E0046D217 /* LaunchImage-568h@2x.png in Resources */,
 				B2FEC1F31FC56C1E0046D217 /* Shot1.png in Resources */,
+				B213F25A1FC66FD20003BCCB /* XHBUserTableViewCell.xib in Resources */,
 				B2FEC1F81FC56C1E0046D217 /* tabbar_disc_hover@2x.png in Resources */,
 				B2FEC1E31FC56C1E0046D217 /* Address_IconHl@2x.png in Resources */,
 			);
@@ -1932,6 +2027,7 @@
 				B2FEC1AC1FC54ECA0046D217 /* DDTTYLogger.m in Sources */,
 				B2FEC1961FC54ECA0046D217 /* NSXMLElement+XEP_0203.m in Sources */,
 				B2FEC1611FC54ECA0046D217 /* XMPPMessage+XEP0045.m in Sources */,
+				B2EBC00A1FD00338003BDE55 /* XHBAddFriendViewController.m in Sources */,
 				B2FEC1571FC54ECA0046D217 /* XMPPRoomCoreDataStorage.m in Sources */,
 				B2FEC1A01FC54ECA0046D217 /* DDList.m in Sources */,
 				B2FEC1841FC54ECA0046D217 /* XMPPMessageArchiving.xcdatamodeld in Sources */,
@@ -1972,6 +2068,7 @@
 				B2FEC13D1FC54ECA0046D217 /* XMPPStream.m in Sources */,
 				B2FEC1661FC54ECA0046D217 /* XMPPvCardCoreDataStorage.m in Sources */,
 				B2FEC19E1FC54ECA0046D217 /* XMPPMessage+XEP_0333.m in Sources */,
+				B213F2591FC66FD20003BCCB /* XHBUserTableViewCell.m in Sources */,
 				B2FEC13A1FC54ECA0046D217 /* XMPPModule.m in Sources */,
 				B2FEC18A1FC54ECA0046D217 /* XMPPMessage+XEP_0172.m in Sources */,
 				B2FEC1B11FC54ECA0046D217 /* NSString+DDXML.m in Sources */,
@@ -1993,6 +2090,7 @@
 				B2FEC1401FC54ECA0046D217 /* XMPPFileTransfer.m in Sources */,
 				B2FEC1AE1FC54ECA0046D217 /* DDDispatchQueueLogFormatter.m in Sources */,
 				B2FEC15F1FC54ECA0046D217 /* XMPPRoomMessageMemoryStorageObject.m in Sources */,
+				B213F24D1FC661C90003BCCB /* UIView+Frame.m in Sources */,
 				B2FEC1301FC54ECA0046D217 /* XMPPXFacebookPlatformAuthentication.m in Sources */,
 				B213967D1FBD982400B7261A /* AppDelegate.m in Sources */,
 				B2FEC19B1FC54ECA0046D217 /* XMPPMessageCarbons.m in Sources */,

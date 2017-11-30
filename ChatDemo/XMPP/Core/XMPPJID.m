@@ -323,10 +323,21 @@
 
 - (NSString *)bare
 {
-	if (user)
+    if (user) {
+        
+        NSLog(@"user: %@", user);
+        
 		return [NSString stringWithFormat:@"%@@%@", user, domain];
-	else
-		return domain;
+//        return user;
+    }
+    else{
+        
+        NSLog(@"domain: %@", domain);
+        
+        return domain;
+
+    }
+        
 }
 
 - (NSString *)full
